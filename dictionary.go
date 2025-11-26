@@ -165,6 +165,12 @@ func MultiWordPartDictionary() litxap.Dictionary {
 
 var startEverythingOnce sync.Once
 
+// MarkFwewAlreadyStarted prevents Global from initializing fwew. Run this if you integrate this along with other
+// feew dependents that also initializes fwew.
+func MarkFwewAlreadyStarted() {
+	startEverythingOnce.Do(func() {})
+}
+
 // Global returns a wrapper around fwew that implements the litxap.Dictionary interface.
 // It does use the global `fwew` dictionary and will initialize it on the first call.
 func Global() litxap.Dictionary {
