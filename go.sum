@@ -8,6 +8,8 @@ github.com/fwew/fwew-lib/v5 v5.25.5 h1:XEQr1KnudGjlL8GOy/QtLhGcSjquOylK4NmL2e8Xc
 github.com/fwew/fwew-lib/v5 v5.25.5/go.mod h1:L6z1myjiD9F2M25GgrXaOIfCn+1FsywG1W3AhZt+bOg=
 github.com/fwew/fwew-lib/v5 v5.26.0 h1:Jymq5QdADF+C3KPSlUakA8LTzZk7tmqUWE6tFWMcHGo=
 github.com/fwew/fwew-lib/v5 v5.26.0/go.mod h1:L6z1myjiD9F2M25GgrXaOIfCn+1FsywG1W3AhZt+bOg=
+github.com/fwew/fwew-lib/v5 v5.27.0 h1:dJLzR+Kk8a6v/UaF35Vj759FTnTfNk27kmR3vvOuYhQ=
+github.com/fwew/fwew-lib/v5 v5.27.0/go.mod h1:L6z1myjiD9F2M25GgrXaOIfCn+1FsywG1W3AhZt+bOg=
 github.com/gissleh/litxap v1.7.0 h1:iUlRTglClYOnVF47fnO6twY8ToDzO68RsZRLTu6xuag=
 github.com/gissleh/litxap v1.7.0/go.mod h1:MQm+GZW5MQSxjfKu4ad/62e/W08rL3whmRQFVXlTioY=
 github.com/gissleh/litxap v1.7.1 h1:L8kCj8PJ2VjS816PoPIGkZJnAfKwY8E1p6ddpzjapio=

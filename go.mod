@@ -3,7 +3,7 @@ module github.com/gissleh/litxap-fwew
 go 1.22.2
 
 require (
-	github.com/fwew/fwew-lib/v5 v5.26.0
+	github.com/fwew/fwew-lib/v5 v5.27.0
 	github.com/gissleh/litxap v1.7.5
 )
 
