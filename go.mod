@@ -1,10 +1,12 @@
 module github.com/gissleh/litxap-fwew
 
-go 1.22.2
+go 1.24
+
+toolchain go1.24.0
 
 require (
-	github.com/fwew/fwew-lib/v5 v5.27.0
-	github.com/gissleh/litxap v1.7.5
+	github.com/fwew/fwew-lib/v5 v5.25.5
+	github.com/gissleh/litxap v1.8.0
 )
 
 require (
