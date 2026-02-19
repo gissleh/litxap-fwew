@@ -5,7 +5,7 @@ go 1.24
 toolchain go1.24.0
 
 require (
-	github.com/fwew/fwew-lib/v5 v5.25.5
+	github.com/fwew/fwew-lib/v5 v5.27.2
 	github.com/gissleh/litxap v1.8.0
 )
 
