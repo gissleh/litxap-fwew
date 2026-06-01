@@ -39,7 +39,7 @@ func (d *fwewDict) LookupEntries(word string) ([]litxap.Entry, error) {
 			// Change to syllables
 			standardizedSyllableString := syllableStandardizer.Replace(strings.ToLower(match.Syllables))
 			syllables := strings.Split(standardizedSyllableString, "-")
-			generatedSyllableData := litxaputil.SplitSyllables(match.Navi)
+			generatedSyllableData := litxaputil.SplitSyllables(strings.ToLower(match.Navi))
 			generatedSyllables := strings.Split(generatedSyllableData.String(), "-")
 
 			if syllables[0] == "we" && strings.HasPrefix(word, "oe") {

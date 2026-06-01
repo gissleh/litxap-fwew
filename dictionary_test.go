@@ -14,6 +14,14 @@ func TestGlobal_SmokeTest(t *testing.T) {
 		t.Fatal("tìfmetok doesn't have entries")
 	}
 
+	entries, err = Global().LookupEntries("Änsìt")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(entries) < 1 {
+		t.Fatal("Änsìt doesn't have entries")
+	}
+
 	entries, err = Global().LookupEntries("pìwobe")
 	if err != nil {
 		t.Fatal(err)
