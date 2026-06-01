@@ -12,6 +12,14 @@ import (
 	"github.com/gissleh/litxap/litxaputil"
 )
 
+var syllableStandardizer = strings.NewReplacer(
+	",", "-",
+	".", "-",
+	" ", "-",
+	"sh", "sy",
+	"ch", "tsy",
+)
+
 type fwewDict struct{}
 
 func (d *fwewDict) LookupEntries(word string) ([]litxap.Entry, error) {
@@ -28,7 +36,15 @@ func (d *fwewDict) LookupEntries(word string) ([]litxap.Entry, error) {
 				continue
 			}
 
-			syllables := strings.Split(strings.ReplaceAll(strings.ToLower(match.Syllables), " ", "-"), "-")
+			// Change to syllables
+			standardizedSyllableString := syllableStandardizer.Replace(strings.ToLower(match.Syllables))
+			syllables := strings.Split(standardizedSyllableString, "-")
+			generatedSyllableData := litxaputil.SplitSyllables(match.Navi)
+			generatedSyllables := strings.Split(generatedSyllableData.String(), "-")
+
+			if syllables[0] == "we" && strings.HasPrefix(word, "oe") {
+				syllables[0] = "oe"
+			}
 
 			for _, ipa := range strings.Split(match.IPA, "or") {
 				ipa = strings.Trim(ipa, " []")
@@ -39,6 +55,12 @@ func (d *fwewDict) LookupEntries(word string) ([]litxap.Entry, error) {
 
 				stressIndex := 0
 				for i, syllable := range ipaSyllables {
+					if len(generatedSyllables) == len(ipaSyllables) &&
+						strings.HasSuffix(generatedSyllables[i], "x") &&
+						!strings.HasSuffix(syllables[i], "x") {
+						syllables[i] = generatedSyllables[i]
+					}
+
 					if strings.HasPrefix(syllable, "ˈ") {
 						stressIndex = i
 						break
