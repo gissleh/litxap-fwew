@@ -2,6 +2,7 @@ package litxapfwew
 
 import (
 	"bytes"
+	"fmt"
 	"log"
 	"slices"
 	"strings"
@@ -72,6 +73,7 @@ func (d *fwewDict) LookupEntries(word string) ([]litxap.Entry, error) {
 				slices.Reverse(suffixes)
 
 				entry := litxap.Entry{
+					ID:          fmt.Sprintf("fwew_%s", match.ID),
 					Word:        match.Navi,
 					Translation: match.EN,
 					Syllables:   syllables,
