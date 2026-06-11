@@ -6,6 +6,8 @@ github.com/fwew/fwew-lib/v5 v5.28.0 h1:n3Rd0K5RbypmhNrpG1iE43q/UhP1q/4W/VEtGHqav
 github.com/fwew/fwew-lib/v5 v5.28.0/go.mod h1:QXEiVfGQIFZJvam2E8p4AtuBjxXW4OfB/9CSktQZaSE=
 github.com/gissleh/litxap v1.15.0 h1:Txdti+87cRsP+tAzWMqR8ugz0Ckaz6zkv8HdYk5DkF4=
 github.com/gissleh/litxap v1.15.0/go.mod h1:0fGiI9bqwFbBEs17QNWLRp4orydx+os2E1hHmtspszw=
+github.com/gissleh/litxap v1.16.0 h1:geJs+QNbhQtu5/GR6OEXfcVBJMhpmuT2E1fIR5gIkmw=
+github.com/gissleh/litxap v1.16.0/go.mod h1:0fGiI9bqwFbBEs17QNWLRp4orydx+os2E1hHmtspszw=
 github.com/go-sql-driver/mysql v1.8.1 h1:LedoTUt/eveggdHS9qUFC1EFSa8bU2+1pZjSRpvNJ1Y=
 github.com/go-sql-driver/mysql v1.8.1/go.mod h1:wEBSXgmK//2ZFJyE+qWnIsVGmvmEKlqwuVSjsCm7DZg=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
