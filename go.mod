@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/fwew/fwew-lib/v5 v5.28.1
-	github.com/gissleh/litxap v1.18.0
+	github.com/gissleh/litxap v1.18.1
 )
 
 require (
